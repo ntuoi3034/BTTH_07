@@ -20,3 +20,16 @@ $("#btnRegister").click(function(e){
     }
     })
 })
+let name_user = document.getElementById('name')
+let error_name = document.getElementById('error-name')
+name_user.addEventListener('blur', function(){
+    var name = /^[a-zA-Z]/
+    if(name.test(name_user.value)){
+        error_name.textContent = 'Tên hợp lệ'
+        error_name.style.color = 'blue'
+    }
+    else{
+        error_name.textContent = 'Tên không hợp lệ'
+        error_name.style.color = 'red'
+    }
+})
