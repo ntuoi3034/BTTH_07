@@ -1,41 +1,68 @@
 let userid = document.getElementById('user-id')
+let valid_id = document.getElementById('valid-id')
 let error_id=document.getElementById('error-id')
+let password = document.getElementById('password')
+let validpw = document.getElementById('valid-pw')
+let error_pw = document.getElementById('error-pw')
+let nameuser = document.getElementById('name')
+let validname = document.getElementById('valid-name')
+let errorname = document.getElementById('error-name')
+let zip_code = document.getElementById('code')
+let validcode = document.getElementById('valid-code')
+let errorcode = document.getElementById('error-code')
+let email = document.getElementById('email')
+let validemail = document.getElementById('valid-email')
+let erroremail = document.getElementById('error-email')
 userid.addEventListener('blur',function(){
     var user_id = /^[a-z0-9_-]{5,12}$/
-    if(user-id.test(userid.value)){
-        error_id.textContent ="Hợp lệ"
-        error_id.style.color ='blue'
+    if(user_id.test(userid.value)){
+        valid_id.classList.remove('disappear')
+        error_id.classList.add('disappear')
     }else{
-        error_id.textContent ="không Hợp lệ"
-        error_id.style.color ='red'
+        valid_id.classList.add('disappear')
+        error_id.classList.remove('disappear')
       }
  })
 
- let password = document.getElementById('password')
-let error_PW=document.getElementById('errorPW')
-password.addEventListener('blur',function(){
-    var password1= /^[a-z0-9_-]{7,12}$/
-    if(password1.test(password.value)){
-        error_PW.textContent ="Hợp lệ"
-        error_PW.style.color ='blue'
+password.addEventListener('blur', function(){
+    var Password = /^[a-z0-9_-]{7,12}$/
+    if(Password.test(password.value)){
+        validpw.classList.remove('disappear')
+        error_pw.classList.add('disappear')
     }else{
-        error_PW.textContent ="không Hợp lệ"
-        error_PW.style.color ='red'
-      }
- })
-
-let name_user = document.getElementById('name')
-let error_name = document.getElementById('error-name')
-name_user.addEventListener('blur', function(){
-    var name = /^[a-zA-Z]/
-    if(name.test(name_user.value)){
-        error_name.textContent = 'Tên hợp lệ'
-        error_name.style.color = 'blue'
+        error_pw.classList.remove('disappear')
+        validpw.classList.add('disappear')
     }
-    else{
-        error_name.textContent = 'Tên không hợp lệ'
-        error_name.style.color = 'red'
+})
+nameuser.addEventListener('blur', function(){
+    var name_user = /^[A-Za-z]/
+    if(name_user.test(nameuser.value)){
+        validname.classList.remove('disappear')
+        errorname.classList.add('disappear')
+    }else{
+        validname.classList.add('disappear')
+        errorname.classList.remove('disappear')
     }
+})
+zip_code.addEventListener('blur', function(){
+    var code = /^[0-9]/
+    if(code.test(zip_code.value)){
+        validcode.classList.remove('disappear')
+        errorcode.classList.add('disappear')
+    }else{
+        validcode.classList.add('disappear')
+        errorcode.classList.remove('disappear')
+    }
+})
+email.addEventListener('blur', function(){
+    var mail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if(mail.test(email.value)){
+        validemail.classList.remove('disappear')
+        erroremail.classList.add('disappear')
+    }else{
+        validemail.classList.add('disappear')
+        erroremail.classList.remove('disappear')
+    } 
 })
 
 

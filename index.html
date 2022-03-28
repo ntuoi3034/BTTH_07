@@ -5,99 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <div>
         <div class="form-login">
             <div id="demo">
-                <h1><b>Registration Form</b></h1>
+                <h2><b>Registration Form</b></h2>
             </div>
             <div>
-                <div style="margin-bottom:15px;">
-                    <form action="">User id:<input style="margin-left:21px;border:1px solid rgb(149,212,248);"
-                        type="text" name="" id="user-id">
-                    <div class="disappear" id="valid-id" style="float: right;"> <i
-                            style="color: green; margin-left: -40px;" class="fa-solid fa-check "></i></div>
-                    <div class="disappear" id="error-id" style="float: right;"> <i style="color: red; margin-left: -40px;" class="fa-solid fa-xmark"></i></div>       
-                </form>
+                <div style="margin-bottom: 15px;">
+                    <form action="">User id: <input style="margin-left: 21px; border:1px solid rgb(149, 212, 248);"
+                            type="text" name="" id="user-id">
+                        <div class="disappear" id="valid-id" style="float: right;"> <i
+                                style="color: green; margin-left: -40px;" class="fa-solid fa-check "></i></div>
+                        <div class="disappear" id="error-id" style="float: right;"> <i style="color: red; margin-left: -40px;" class="fa-solid fa-xmark"></i></div>       
+                    </form>
                 </div>
-            </div>
 
-            <div style="margin-bottom:15px;">
-                <form action="">Password: <input style="margin-left: 6px; border:1px solid rgb(149, 212, 248);"
-                        type="psw" name="" id="password">
-                    <div class="disappear" id="valid-PW" style="float: right;"> <i
-                            style="color: green; margin-left: -40px;" class="fa-solid fa-check "></i></div>
-                    <div class="disappear" id="error-PW" style="float: right;"> <i style="color: red; margin-left: -40px;" class="fa-solid fa-xmark"></i></div>
+                <div style="margin-bottom: 15px;">
+                    <form action="">Password: <input style="margin-left: 6px; border:1px solid rgb(149, 212, 248);"
+                            type="psw" name="" id="password">
+                        <div class="disappear" id="valid-pw" style="float: right;"> <i
+                                style="color: green; margin-left: -40px;" class="fa-solid fa-check "></i></div>
+                        <div class="disappear" id="error-pw" style="float: right;"> <i style="color: red; margin-left: -40px;" class="fa-solid fa-xmark"></i></div>
+                        </form>
+                        
+                </div>
+                <div>
+                    <form action="">Name: <input style="margin-left: 29px; border:1px solid rgb(149, 212, 248);"
+                            type="text" name="" id="name">
+                            <div class="disappear" id="valid-name" style="float: right;"> <i
+                                style="color: green; margin-left: -40px;" class="fa-solid fa-check "></i></div>
+                        <div class="disappear" id="error-name" style="float: right;"> <i style="color: red; margin-left: -40px;" class="fa-solid fa-xmark"></i></div>
+                        </form>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <form action="">Address: <input style="margin-left: 15px; border:1px solid rgb(149, 212, 248);"
+                            type="text" name=""></form>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <form action="">Country:
+                        <select
+                            style="margin-left: 15px; height: 21px; width: 177px; border:1px solid rgb(149, 212, 248);"
+                            name="" id="country">
+                            <option value="">Please choose country</option>
+                            <option value="">Viet Nam</option>
+                            <option value="">Russia</option>
+                            <option value="">American</option>
+                            <option value="">Japan</option>
+                        </select>
                     </form>
-                    
-            </div>
-            <div>
-                <form action="">Name: <input style="margin-left: 29px; border:1px solid rgb(149, 212, 248);"
-                        type="text" name="" id="name">
-                        <div class="disappear" id="valid-name" style="float: right;"> <i
-                            style="color: green; margin-left: -40px;" class="fa-solid fa-check "></i></div>
-                    <div class="disappear" id="error-name" style="float: right;"> <i style="color: red; margin-left: -40px;" class="fa-solid fa-xmark"></i></div>
-                    </form>
-            </div>
-            <div style="margin-bottom: 15px;">
-                <form action="">Address: <input style="margin-left: 15px; border:1px solid rgb(149, 212, 248);"
-                        type="text" name=""></form>
-            </div>
-            <div style="margin-bottom: 15px;">
-                <form action="">Country:
-                    <select
-                        style="margin-left: 15px; height: 21px; width: 177px; border:1px solid rgb(149, 212, 248);"
-                        name="" id="country">
-                        <option value="">Please choose country</option>
-                        <option value="">Viet Nam</option>
-                        <option value="">Russia</option>
-                        <option value="">American</option>
-                        <option value="">Japan</option>
-                    </select>
-                </form>
-            </div>
-            <div style="margin-bottom: 15px;">
-                <form action="">ZIP Code: <input style="margin-left: 5px; border:1px solid rgb(149, 212, 248);"
-                        type="text" name="" id="code">
-                        <div class="disappear" id="valid-code" style="float: right;"> <i
-                            style="color: green; margin-left: -40px;" class="fa-solid fa-check "></i></div>
-                    <div class="disappear" id="error-code" style="float: right;"> <i style="color: red; margin-left: -40px;" class="fa-solid fa-xmark"></i></div>
-                    </form>
-            </div>
-            <div style="margin-bottom: 15px;">
-                <form action="">Email: <input style="margin-left: 28px; border:1px solid rgb(149, 212, 248);"
-                        type="email" name="" id="email">
-                        <div class="disappear" id="valid-email" style="float: right;"> <i
-                            style="color: green; margin-left: -40px;" class="fa-solid fa-check "></i></div>
-                    <div class="disappear" id="error-email" style="float: right;"> <i style="color: red; margin-left: -40px;" class="fa-solid fa-xmark"></i></div>
-                    </form>
-                <div id="error-email" style="text-align: center; margin-top: -15px;"></div>
-            </div>
-            <div style="margin-bottom: 15px;">
-                <form action="">Sex: <input style="margin-left: 43px; border:1px solid rgb(149, 212, 248);"
-                        type="radio" name="gioitinh" value="Nam"> Male <input type="radio" name="gioitinh"
-                        value="Nữ"> Female</form>
-            </div>
-            <div style="margin-bottom: 15px;">
-                <form action="">Language: <input style="border:1px solid rgb(149, 212, 248);" type="checkbox"
-                        name="" value=""> English <input type="checkbox" name="" value=""> Non English</form>
-            </div>
-            <div style="margin-bottom: 15px;">
-                <form action="">About: <input
-                        style="margin-left: 26px; height: 105px; border:1px solid rgb(149, 212, 248);" type="text"
-                        name=""></form>
-            </div>
-            <div style="margin-bottom: 15px;">
-                <form action="url"><input
-                        style="margin-top: 10px; width: 100px; height: 30px; border:1px solid rgb(22, 155, 231);"
-                        type="submit" name="submit" value="Submit" /></form>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <form action="">ZIP Code: <input style="margin-left: 5px; border:1px solid rgb(149, 212, 248);"
+                            type="text" name="" id="code">
+                            <div class="disappear" id="valid-code" style="float: right;"> <i
+                                style="color: green; margin-left: -40px;" class="fa-solid fa-check "></i></div>
+                        <div class="disappear" id="error-code" style="float: right;"> <i style="color: red; margin-left: -40px;" class="fa-solid fa-xmark"></i></div>
+                        </form>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <form action="">Email: <input style="margin-left: 28px; border:1px solid rgb(149, 212, 248);"
+                            type="email" name="" id="email">
+                            <div class="disappear" id="valid-email" style="float: right;"> <i
+                                style="color: green; margin-left: -40px;" class="fa-solid fa-check "></i></div>
+                        <div class="disappear" id="error-email" style="float: right;"> <i style="color: red; margin-left: -40px;" class="fa-solid fa-xmark"></i></div>
+                        </form>
+                    <div id="error-email" style="text-align: center; margin-top: -15px;"></div>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <form action="">Sex: <input style="margin-left: 43px; border:1px solid rgb(149, 212, 248);"
+                            type="radio" name="gioitinh" value="Nam"> Male <input type="radio" name="gioitinh"
+                            value="Nữ"> Female</form>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <form action="">Language: <input style="border:1px solid rgb(149, 212, 248);" type="checkbox"
+                            name="" value=""> English <input type="checkbox" name="" value=""> Non English</form>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <form action="">About: <input
+                            style="margin-left: 26px; height: 105px; border:1px solid rgb(149, 212, 248);" type="text"
+                            name=""></form>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <form action="url" style="text-align: center"><input
+                            style="margin-top: 10px; width: 100px; height: 30px; border:1px solid rgb(22, 155, 231);"
+                            type="submit" name="submit" value="Submit" /></form>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
 </html>
